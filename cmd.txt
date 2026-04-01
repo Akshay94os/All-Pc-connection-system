@@ -1,0 +1,9 @@
+mkdir LabManagerSystem
+cd LabManagerSystem
+python -m venv venv
+venv\Scripts\activate
+pip install django
+django-admin startproject core_server .
+python manage.py startapp admin_dashboard
+python manage.py makemigrations
+python manage.py migrate
