@@ -5,7 +5,7 @@ import urllib.request
 import json
 import time
 import subprocess
-
+ 
 SERVER_URL = "http://127.0.0.1:8000/api/register/"
 COMMAND_URL = "http://127.0.0.1:8000/api/get-commands/"
 
