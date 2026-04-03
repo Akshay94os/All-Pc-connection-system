@@ -59,4 +59,4 @@ if __name__ == "__main__":
             time.sleep(5)
             
     # Start the continuous listening loop
-    listen_for_commands(mac)
+    listen_for_commands(mac)   
