@@ -1,7 +1,6 @@
 import socket
 import uuid
 import platform
-
 import urllib.request
 import json
 import time
