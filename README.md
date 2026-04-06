@@ -1,2 +1,2 @@
-inlinstall django 
+install django 
 
