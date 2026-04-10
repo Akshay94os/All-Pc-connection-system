@@ -1,2 +1,2 @@
 
- install django 
+install django 
